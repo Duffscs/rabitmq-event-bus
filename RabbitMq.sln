@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMq", "RabbitMq\RabbitMq.csproj", "{A2A8BB42-57BA-45D9-88E6-419703116A89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master", "Master\Master.csproj", "{532E423D-BC45-47AF-A818-D3503971F25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slave", "Slave\Slave.csproj", "{EDE6E9D0-3712-4F6D-B2AC-255BA9A58460}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2A8BB42-57BA-45D9-88E6-419703116A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A8BB42-57BA-45D9-88E6-419703116A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A8BB42-57BA-45D9-88E6-419703116A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A8BB42-57BA-45D9-88E6-419703116A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{532E423D-BC45-47AF-A818-D3503971F25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532E423D-BC45-47AF-A818-D3503971F25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532E423D-BC45-47AF-A818-D3503971F25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532E423D-BC45-47AF-A818-D3503971F25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE6E9D0-3712-4F6D-B2AC-255BA9A58460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE6E9D0-3712-4F6D-B2AC-255BA9A58460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE6E9D0-3712-4F6D-B2AC-255BA9A58460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE6E9D0-3712-4F6D-B2AC-255BA9A58460}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D908063F-EE5E-4671-88A1-3C54C9C31446}
+	EndGlobalSection
+EndGlobal
