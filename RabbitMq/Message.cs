@@ -7,5 +7,8 @@ using System.Threading.Tasks;
 namespace RabbitMq;
 
 
-public record StartJobCommand(string JobName) : RabbitMq.IRequest;
+public record StartJobCommand(string JobName, string RoutingKey, string ReplyQueue) : IRequest;
 public record Data();
+
+public record HealthRequest(string RoutingKey, string ReplyQueue) : IRequest;
+public record HealthResponse(string Status);
