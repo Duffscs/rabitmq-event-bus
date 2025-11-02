@@ -4,7 +4,7 @@ using System.Text.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace RabbitMq;
+namespace Library;
 
 public record QueueInfo(string QueueName, string RoutingKey);
 
@@ -46,7 +46,7 @@ public class RabbitMqEventBus : IDisposable {
     private readonly object _syncRoot = new();
     private bool _disposed;
 
-    public RabbitMqEventBus(string username, string password, string hostName, int port, int recoveryTimeSecond) {
+    public RabbitMqEventBus(string username, string password, string hostName, int port, int recoveryTimeSecond = 5) {
         _factory = new ConnectionFactory {
             UserName = username,
             Password = password,

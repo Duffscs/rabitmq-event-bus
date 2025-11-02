@@ -1,0 +1,80 @@
+﻿{
+  "Objects": [
+    {
+      "Id": "slave",
+      "Type": "Library.Service.Slave",
+      "ConstructorArgs": [
+        "slave",
+        "@bus",
+        true
+      ],
+      "Properties": {
+        "IntList": "@listInt",
+        "IntList2": [ "@int1", 2, 3, 4, 5 ],
+        "IntSet": [ 2, 5, 3, 4, 3, 2, 1, 5, 4, "@int1" ],
+        "Datas": [ "@data1", "@data2" ],
+        "StringDict": {
+          "@stringIntTestRef": "@int1",
+          "two": 2,
+          "three": 3
+        }
+      }
+    },
+    {
+      "Id": "bus",
+      "Type": "Library.RabbitMqEventBus",
+      "ConstructorArgs": [
+        "guest",
+        "guest",
+        "172.28.35.118",
+        5672
+      ]
+    },
+    {
+      "Id": "listInt",
+      "Type": "List<int>",
+      "ConstructorArgs": [ [ "@int1", 2, 3, 4, 5 ] ]
+    },
+    {
+      "Id": "int1",
+      "Type": "int",
+      "Value": 1
+    },
+    {
+      "Id": "stringInt1",
+      "Type": "string",
+      "Value": "one"
+    },
+    {
+      "Id": "stringIntTestRef",
+      "Type": "string",
+      "Value": "@stringInt1"
+    },
+    {
+      "Id": "data1",
+      "Type": "Library.Data",
+      "ConstructorArgs": [ 5 ]
+    },
+    {
+      "Id": "data2",
+      "Type": "Library.Data",
+      "ConstructorArgs": [ 10 ]
+    },
+    {
+      "Id": "dic",
+      "Type": "Dictionary<string, Dictionary<string, int>>",
+      "ConstructorArgs": [
+        {
+          "first": {
+            "one": 1,
+            "two": 2
+          },
+          "second": {
+            "three": 3,
+            "four": 4
+          }
+        }
+      ]
+    }
+  ]
+}

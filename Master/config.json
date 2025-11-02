@@ -1,0 +1,23 @@
+﻿{
+  "Objects": [
+    {
+      "Id": "master",
+      "Type": "Library.Service.Master",
+      "Properties": {
+        "ServiceName": "Master",
+        "Bus": "@Bus"
+      }
+    },
+    {
+      "Id": "Bus",
+      "Type": "Library.RabbitMqEventBus",
+      "ConstructorArgs": [
+        "guest",
+        "guest",
+        "172.28.35.118",
+        5672,
+        5
+      ]
+    }
+  ]
+}

@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RabbitMq\RabbitMq.csproj" />
+    <ProjectReference Include="..\Library\Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
